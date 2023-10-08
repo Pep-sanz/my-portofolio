@@ -23,6 +23,7 @@ body {
 nav {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
   box-shadow: var(---box-shadow);
   display: flex;
   justify-content: space-around;
@@ -44,8 +45,8 @@ nav .logo {
 
 nav ul {
   display: flex;
-  width: 40%;
   justify-content: space-between;
+  width: 40%;
 }
 
 nav ul li {
@@ -55,8 +56,12 @@ nav ul li a {
   font-weight: 300;
   font-family: "Poppins";
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(---primary);
+}
+
+nav ul li a:hover {
+  color: var(---color);
 }
 
 /* hamburger menu */
@@ -74,7 +79,6 @@ nav ul li a {
   width: 40px;
   height: 28px;
   opacity: 0;
-  left: -6px;
   cursor: pointer;
   z-index: 2;
 }
@@ -180,7 +184,7 @@ nav ul li a {
 }
 
 .home .contentIsi .sosmed a i {
-  font-size: 1.9rem ;
+  font-size: 1.9rem;
   color: var(---primary);
 }
 .home .contentIsi .sosmed a i:hover {
@@ -398,42 +402,73 @@ nav ul li a {
   html {
     font-size: 60%;
   }
-  .navbar-brand {
-    text-align: center;
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 80%;
+    transform: translatex(100%);
+    transition: all 1s;
+    z-index: -1;
+    opacity: 0;
   }
 
+  nav ul.slide {
+    opacity: 1;
+    transform: translatex(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* .home .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  } */
+
   .home .contentIsi {
+    /* background-color: purple; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    /* align-items: center; */
-    margin: auto;
-    /* flex-direction: column; */
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10rem;
+    flex-direction: column;
   }
 
   .contentIsi .textHome {
+    /* background-color: #fff; */
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: start;
     flex-direction: column;
+
+    
   }
   .home .contentIsi .container-poto {
-    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
     width: auto;
     height: auto;
-    order: 2;
+    order: -1; 
   }
   .home .contentIsi .container-poto img {
     width: 250px;
     height: 250px;
-  }
-
-  .navbar .offcanvas {
-    background-color: tomato;
-    height: 100vh;
-
-    text-align: center;
   }
 }
 /* media query strart */
