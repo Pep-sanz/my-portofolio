@@ -43,6 +43,16 @@ nav .logo {
   z-index: -1;
 }
 
+nav .logo span{
+  font-family: "Sedgwick Ave";
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: var(---color);
+  z-index: -1;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -58,6 +68,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.3rem;
   color: var(---primary);
+  transition: .3s;
 }
 
 nav ul li a:hover {
