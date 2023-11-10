@@ -16,17 +16,19 @@
     <!-- my icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-    <!-- my style -->
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- my style -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navbar start -->
     <nav>
-      <a href="#" class="logo">PEPEP<span>.SR</span></a>
-      <ul>
+      <a href="#" class="logo animate__animated animate__bounceInLeft animate__delay-1s">PEPEP<span>.SR</span></a>
+      <ul class="animate__animated animate__bounceInRight animate__delay-1s">
         <li><a href="#home">home</a></li>
-        <li><a href="#about">about me</a></li>
+        <li><a href="#about" class="">about me</a></li>
         <li><a href="#portofolio">portofolio</a></li>
         <li><a href="#contact">contact me</a></li>
       </ul>
@@ -40,36 +42,39 @@
     <!-- navbar start -->
 
     <!-- home section start -->
-    <section id="home" class="home">
-      <main class="container">
-        <div class="row contentIsi">
-          <div class="col-6">
-            <div class="row d-flex justify-content-center">
-              <div class="textHome col-md-8-6">
-                <h2>
-                  <span>Hi I'am</span><br />
-                  Pepep Saepul Rohman
-                </h2>
-                <h3>fullstack web depelover</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem est beatae atque, reiciendis voluptatum obcaecati aut molestiae nulla amet, incidunt accusamus officiis architecto labore ipsa sunt dignissimos. Possimus,
-                  soluta tempore!
-                </p>
-                <div class="sosmed">
-                  <a href=""><i class="bi bi-linkedin px-3"></i></a>
-                  <a href=""><i class="bi bi-instagram px-3"></i></a>
-                  <a href=""><i class="bi bi-github px-3"></i></a>
-                  <a href=""><i class="bi bi-facebook px-3"></i></a>
+    <div class="parallax">
+      <section id="home" class="home">
+        <main class="container">
+          <div class="row contentIsi">
+            <div class="col-6">
+              <div class="row d-flex justify-content-center">
+                <div class="textHome col-md-8-6">
+                  <h2>
+                    <span>Hi I'am</span><br />
+                    Pepep Saepul Rohman
+                  </h2>
+                  <h3>fullstack web depelover</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem est beatae atque, reiciendis voluptatum obcaecati aut molestiae nulla amet, incidunt accusamus officiis architecto labore ipsa sunt dignissimos. Possimus,
+                    soluta tempore!
+                  </p>
+                  <div class="sosmed">
+                    <a href=""><i class="bi bi-linkedin px-3"></i></a>
+                    <a href=""><i class="bi bi-instagram px-3"></i></a>
+                    <a href=""><i class="bi bi-github px-3"></i></a>
+                    <a href=""><i class="bi bi-facebook px-3"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="container-poto col-md-4">
+              <img src="./aset/poto/pepepsr.png" alt="pepepsr" class="img-responsve" />
+            </div>
           </div>
-          <div class="container-poto col-md-4">
-            <img src="./aset/poto/pepepsr.png" alt="pepepsr" class="img-responsve" />
-          </div>
-        </div>
-      </main>
-    </section>
+        </main>
+      </section>
+    </div>
+
     <!-- hero section -->
 
     <!-- portofolio start -->

@@ -43,7 +43,7 @@ nav .logo {
   z-index: -1;
 }
 
-nav .logo span{
+nav .logo span {
   font-family: "Sedgwick Ave";
   font-weight: 600;
   text-decoration: none;
@@ -68,7 +68,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.3rem;
   color: var(---primary);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -128,8 +128,15 @@ nav ul li a:hover {
 
 /* style content start */
 
+.parallax{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("aset/poto/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+}
+
+
 .home {
-  background-color: transparent;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -222,6 +229,7 @@ nav ul li a:hover {
   background-image: url(/aset/poto/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: auto;
   /* margin-top: 15rem; */
   z-index: -1;
@@ -462,11 +470,9 @@ nav ul li a:hover {
     /* background-color: #fff; */
     padding: 2rem;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: start;
     flex-direction: column;
-
-    
   }
   .home .contentIsi .container-poto {
     display: flex;
@@ -475,7 +481,7 @@ nav ul li a:hover {
     /* background-color: tomato; */
     width: auto;
     height: auto;
-    order: -1; 
+    order: -1;
   }
   .home .contentIsi .container-poto img {
     width: 250px;
